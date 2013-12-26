@@ -1,0 +1,7 @@
+exports.twitter = {
+    screen_name: 'deb_upsilon',
+    consumer_key: '*****',
+    consumer_secret: '*****',
+    access_token: '*****',
+    access_secret: '*****',
+}

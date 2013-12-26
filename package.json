@@ -1,0 +1,20 @@
+{
+  "name": "deb_upsilon",
+  "version": "0.0.0",
+  "description": "@deb_upsilon の中身",
+  "scripts": {
+    "test": "qunit -c deb-upsilon.js -t tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/upsilon/deb_upsilon.git"
+  },
+  "author": "Kimura Youichi <kim.upsilon@bucyou.net>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/upsilon/deb_upsilon/issues"
+  },
+  "dependencies": {
+    "ntwitter": "~0.5.0"
+  }
+}
