@@ -32,6 +32,11 @@ var twit = new twitter({
     access_token_secret: config.twitter.access_secret,
 })
 
+function getTimestamp() {
+    var date = new Date()
+    return date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds()
+}
+
 function onData(data) {
     if (!data || !data.user || !data.text)
         return
@@ -55,7 +60,7 @@ function onData(data) {
     if (message === null)
         message = '何それ'
 
-    message = '@' + screenName + ' ' + message
+    message = util.format('@%s %s [%s]', screenName, message, getTimestamp())
     util.log(util.format('bot: reply "%s"', message))
 
     twit.updateStatus(message, { in_reply_to_status_id: statusId }, function(err, results) {
