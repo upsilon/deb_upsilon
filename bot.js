@@ -36,6 +36,9 @@ function onData(data) {
     if (!data || !data.user || !data.text)
         return
 
+    if ('retweeted_status' in data)
+        return
+
     var statusId = data.id_str
     var screenName = data.user.screen_name
     var text = data.text
