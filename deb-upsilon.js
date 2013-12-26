@@ -95,8 +95,8 @@ var messageMap = {
     'd 4.0':        releases.debian['etch'],
     'd 5.0':        releases.debian['lenny'],
     'd 6.0':        releases.debian['squeeze'],
-    'd 7.0':        releases.debian['wheezy'],
-    'd 8.0':        releases.debian['jessie'],
+    'd 7':          releases.debian['wheezy'],
+    'd 8':          releases.debian['jessie'],
 
     'd oldstable':  releases.debian['squeeze'],
     'd stable':     releases.debian['wheezy'],
